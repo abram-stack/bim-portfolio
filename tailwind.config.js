@@ -12,6 +12,15 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: '#4D807C',
+        light: '#e1ebf4',
+        lightPink:'#F4E1E5'
+      },
+      fontFamily: {
+        rubik: ['var(--font-rubik)'],
+        karla: ['var(--font-karla)']
+      }
     },
   },
   plugins: [],
