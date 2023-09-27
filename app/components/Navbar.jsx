@@ -4,20 +4,13 @@ import { RiMoonFoggyFill } from 'react-icons/ri';
 export default function Navbar() {
   return (
     <>
-      <nav className='py-10 flex justify-between mb-8 container'>
+      <nav className='py-10 flex justify-between container'>
         <Link href='/'>
-          <h1
-            className='text-2xl text-[#abc7dd] font-rubik cursor-pointer'
-            style={{
-              textShadow: '-2px 4px #24494f',
-              webkitTextStrokeWidth: '1px',
-              webkitTextStrokeColor: '#151928',
-            }}
-          >
+          <h1 className='text-xl text-[#abc7dd] font-rubik cursor-pointer logo'>
             Console <br /> Botanist
           </h1>
         </Link>
-        <ul className='flex items-center'>
+        <ul className='flex gap-3 items-center'>
           <li>
             <RiMoonFoggyFill className='cursor-pointer text-2xl' />
           </li>
@@ -27,7 +20,7 @@ export default function Navbar() {
           <li>
             <Link
               href='/resume'
-              className='bg-gradient-to-r from-cyan-500 to-teal-500  px-4 py-2 rounded-md ml-8 text-white'
+              className='bg-gradient-to-r from-cyan-500 to-teal-500  px-4 py-2 rounded-md text-white'
             >
               Resume
             </Link>

@@ -14,6 +14,35 @@ html, body{
 body{
   @apply font-karla text-light bg-[#4D807C]
 }
+/* Typography */
+.logo{
+  text-shadow: -2px 4px #24494f;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #151928;
+}
+.greeting{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4D807C;
+  @apply font-grotesk text-lightPink font-bold text-3xl max-w-xl py-2 mb-5 md:text-6xl
+}
+.subtitle{
+  text-shadow: -2px 4px #5F1C1C;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #011423;
+  @apply font-rubik text-xl text-[#D2C193]
+}
+
 .container{
   @apply px-10 md:px-20 lg:px-40 border border-red-600
+}
+
+
+/* COMPONENTS */
+.social{
+  @apply bg-lightPink rounded-md py-1 px-2 text-[#011423]
+}
+
+/* LAYOUT */
+.hero{
+  @apply mt-20
 }

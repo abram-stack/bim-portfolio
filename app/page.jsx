@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { RiMoonFoggyFill } from 'react-icons/ri';
 import { BiLogoTwitter, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi';
+import Link from 'next/link';
 
 import bims from '../public/avatar.jpg';
 import design from '../public/design.png';
@@ -15,35 +16,27 @@ import proj6 from '../public/web6.png';
 
 export default function Home() {
   return (
-    <main className='min-h-screen'>
-      <section className='container'>
-        <div className='text-center p-10'>
-          <h2 className='text-5xl py-2font-medium text-light mb-5 md:text-6xl max-w-xl mx-auto'>
-            Bramantyo Bimonugroho
+    <main className=''>
+      <section className='container min-h-screen'>
+        <div className='hero'>
+          <h2 className='greeting border border-red-200 '>
+            Ei Gude! I'am
+            <br />
+            <span>Bram</span>
           </h2>
-          <h3
-            className='text-xl font-rubik text-[#D2C193] py-2 md:max-w-xl mx-auto mb-3'
-            style={{
-              textShadow: '-2px 4px #5F1C1C',
-              webkitTextStrokeWidth: '1px',
-              webkitTextStrokeColor: '#011423',
-            }}
-          >
+          <h2 className='subtitle py-2 md:max-w-xl mx-auto mb-3'>
             Frontend Explorer
-          </h3>
-          <p className='text-md py-5 leading-6 md:text-lg max-w-xl mx-auto'>
+          </h2>
+          <p className='text-xl py-5 leading-7 md:text-lg max-w-xl mx-auto'>
             Just scratched the surface of the frontend world, amazed and heading
             forward for discovering the rest of the web dev world.
           </p>
         </div>
         <div className='text-2xl flex justify-center text-gray-800 gap-5'>
-          <a href='#' className='bg-lightPink rounded-md py-1 px-2 '>
+          <Link href='#' className='social'>
             <BiLogoTwitter />
-          </a>
-          <a
-            href='#'
-            className='bg-lightPink rounded-md py-1 px-2 text-[#011423]'
-          >
+          </Link>
+          <a href='#' className=''>
             <BiLogoLinkedin />
           </a>
           <a

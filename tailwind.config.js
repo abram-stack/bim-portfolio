@@ -19,7 +19,8 @@ module.exports = {
       },
       fontFamily: {
         rubik: ['var(--font-rubik)'],
-        karla: ['var(--font-karla)']
+        karla: ['var(--font-karla)'],
+        grotesk: ['var(--font-grotesk)']
       }
     },
   },
