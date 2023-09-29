@@ -12,7 +12,7 @@ html, body{
 }
 
 body{
-  @apply font-karla text-light bg-[#4D807C]
+  @apply font-karla text-primary bg-lightPink
 }
 /* Typography */
 .logo{
@@ -21,9 +21,9 @@ body{
   -webkit-text-stroke-color: #151928;
 }
 .greeting{
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #4D807C;
-  @apply font-grotesk text-lightPink font-bold text-3xl max-w-xl py-2 mb-5 md:text-6xl
+  @apply font-grotesk text-lightPink font-bold text-6xl max-w-xl py-2 mb-5 md:text-8xl
 }
 .subtitle{
   text-shadow: -2px 4px #5F1C1C;
@@ -33,15 +33,25 @@ body{
 }
 
 .container{
-  @apply px-10 md:px-20 lg:px-40 border border-red-600
+  @apply px-10 md:px-20 lg:px-40 mx-auto
 }
 
 
 /* COMPONENTS */
 .social{
-  @apply bg-lightPink rounded-md py-1 px-2 text-[#011423]
+  @apply bg-primary rounded-md py-1 px-2 text-light
 }
-
+.card{
+  box-shadow: 1px 1px 5px #999;
+  @apply text-center  p-10 rounded-xl my-10
+}
+.card--title{
+  @apply text-lg font-medium mt-8 mb-2
+}
+.projects--card{
+  box-shadow: 1px 1px 5px #999;
+  @apply max-w-lg mx-auto rounded-lg
+}
 /* LAYOUT */
 .hero{
   @apply mt-20

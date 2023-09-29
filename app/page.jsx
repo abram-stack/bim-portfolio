@@ -1,199 +1,157 @@
 import Image from 'next/image';
-import { RiMoonFoggyFill } from 'react-icons/ri';
-import { BiLogoTwitter, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi';
+
 import Link from 'next/link';
 
-import bims from '../public/avatar.jpg';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import proj1 from '../public/web1.png';
-import proj2 from '../public/web2.png';
-import proj3 from '../public/web3.png';
-import proj4 from '../public/web4.png';
-import proj5 from '../public/web5.png';
-import proj6 from '../public/web6.png';
+import movielistProj from '../public/movielist-proj.png';
+import shoplistProj from '../public/shoplist-proj.png';
+import colorpaletteProj from '../public/colorpalette-proj.png';
+import spaceProj from '../public/space-proj.png';
+import pokeProj from '../public/poke-proj.png';
+import landingProj from '../public/landing-proj.png';
+
+// Components
+import Hero from './components/Hero';
 
 export default function Home() {
   return (
     <main className=''>
-      <section className='container min-h-screen'>
-        <div className='hero'>
-          <h2 className='greeting border border-red-200 '>
-            Ei Gude! I'am
-            <br />
-            <span>Bram</span>
-          </h2>
-          <h2 className='subtitle py-2 md:max-w-xl mx-auto mb-3'>
-            Frontend Explorer
-          </h2>
-          <p className='text-xl py-5 leading-7 md:text-lg max-w-xl mx-auto'>
-            Just scratched the surface of the frontend world, amazed and heading
-            forward for discovering the rest of the web dev world.
-          </p>
-        </div>
-        <div className='text-2xl flex justify-center text-gray-800 gap-5'>
-          <Link href='#' className='social'>
-            <BiLogoTwitter />
-          </Link>
-          <a href='#' className=''>
-            <BiLogoLinkedin />
-          </a>
-          <a
-            href='#'
-            className='bg-lightPink rounded-md py-1 px-2 text-[#011423]'
-          >
-            <BiLogoGithub />
-          </a>
-        </div>
-        <div className='relative border border-teal-500  w-80 h-80 mx-auto mt-20 rounded-full overflow-hidden'>
-          <Image src={bims} layout='fill' objectFit='cover' />
-        </div>
-      </section>
-
+      <Hero />
       {/* SECTION: SERVICE */}
-      <section>
+      <section className='container'>
         <div>
-          <h3
-            className='text-2xl font-rubik  py-1 text-[#D2C193]'
-            style={{
-              textShadow: '-2px 4px #5F1C1C',
-              webkitTextStrokeWidth: '1px',
-              webkitTextStrokeColor: '#011423',
-            }}
-          >
-            What I do
-          </h3>
+          <h3 className='text-2xl subtitle my-5'>My journey</h3>
           <p className='text-md py-2 leading-7 text-gray-800'>
-            Since the beginning of my journey as a freelancer ive done some of
-            work. I like to think of the{' '}
-            <span className='text-teal-500'>sustainability</span>.
+            Heard of Dreamweaver? Ouf that was somewhere decades ago. At that
+            time, where i designed my first ever website at my junior high. Not
+            the perfect rocket launch i'd say since that time. However, some
+            years later, my older version of me, encourage himself and had found
+            the passion, fun and tried to conquer the world where once beyond
+            the knowledge.
           </p>
           <p className='text-md py-2 leading-7 text-gray-800'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            explicabo et amet. Molestias beatae odio distinctio dolore? Laborum
-            molestias non magnam consequatur magni blanditiis ad? I like to
-            think of the <span className='text-teal-500'>sustainability</span>.
+            Growing plants takes time. Good harvest need good care and
+            dedication and it creates its own satisfaction same way as i have my
+            unique perpective in my Frontend Web Development. As i continued my
+            journey in Frankfurt University Applied Science in Germany, as
+            Computer Science student, i've done work and research of the{' '}
+            <span className='text-teal-500'>sustainability</span> aspects of the
+            websites.
           </p>
-          <p className='text-md py-2 leading-7 text-gray-800'>
-            Since the beginning of my journey as a freelancer ive done some of
-            work. I like to think of the{' '}
-            <span className='text-teal-500'>sustainability</span>.
+          <p>
+            Trial and errors are not taboo. Learn and re-learn many times until
+            it grasps, the A-ha moment that i've been waiting for.
           </p>
         </div>
 
         {/* CARDS */}
-        <div className='lg:flex gap-10'>
+        <div className='mx-8 lg:flex gap-10'>
           {/* card 1 */}
-          <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
-            <Image src={design} width={100} height={100} className=' mx-auto' />
-            <h3 className=' text-lg font-medium pt-8 pb-2'>Beautiful Design</h3>
-            <p>Creating elegant designs suited for your design needs.</p>
-            <h4 className='py-4 text-teal-600'>Tools I use</h4>
+          <div className='card'>
+            <Image src={design} width={100} height={100} className='mx-auto' />
+            <h3 className='card--title'>HTML, CSS</h3>
+            <p>Micro Components, Landing Page</p>
             <p className='text-gray-800 py-1'>Adobe XD</p>
+            <p className='text-gray-800 py-1'>Figma</p>
             <p className='text-gray-800 py-1'>Figma</p>
           </div>
           {/* card 2 */}
-          <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='card'>
             <Image src={code} width={100} height={100} className='mx-auto' />
-            <h3 className='border border-orange-400 text-lg font-medium pt-8 pb-2'>
-              Coding
-            </h3>
-            <p>Creating elegant designs suited for your design needs.</p>
-            <h4 className='py-4 text-teal-600'>Tools I use</h4>
+            <h3 className='card--title'>JavaScript</h3>
+            <p>Interactivity and functionality of website</p>
             <p className='text-gray-800 py-1'>Adobe XD</p>
             <p className='text-gray-800 py-1'>Figma</p>
           </div>
           {/* card 3 */}
-          <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='card'>
             <Image
               src={consulting}
               width={100}
               height={100}
               className='mx-auto'
             />
-            <h3 className='border border-orange-400 text-lg font-medium pt-8 pb-2'>
-              Consulting
-            </h3>
-            <p>Creating elegant designs suited for your design needs.</p>
-            <h4 className='py-4 text-teal-600'>Tools I use</h4>
-            <p className='text-gray-800 py-1'>Adobe XD</p>
-            <p className='text-gray-800 py-1'>Figma</p>
+            <h3 className='card--title'>Library, Framework and Tools</h3>
+            <p>Design, develop and ship!</p>
+            <p className='text-gray-800 py-1'>React</p>
+            <p className='text-gray-800 py-1'>NextJS</p>
+            <p className='text-gray-800 py-1'>Firebase</p>
           </div>
         </div>
       </section>
 
       {/* SECTION: Projects */}
-      <section>
+      <section className='container '>
         <div>
-          <h3 className='text-3xl '>Projects</h3>
+          <h3 className='subtitle my-5'>Projects</h3>
           <p className='text-md py-2 leading-7 text-gray-800'>
             This are some of projects i built along the way of my journey as a
-            <span className='text-teal-500'>frontend explorer</span>.
-          </p>
-          <p className='text-md py-2 leading-7 text-gray-800'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            explicabo et amet. Molestias beatae odio distinctio dolore? Laborum
-            molestias non magnam consequatur magni blanditiis ad? I like to
-            think of the <span className='text-teal-500'>sustainability</span>.
+            <span className='text-primary'> frontend explorer</span>.
           </p>
         </div>
 
-        <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <div className='basis-1/3 flex-1 max-w-lg mx-auto border border-red-500'>
+        <div className='py-10 grid md:grid-cols-2 gap-10'>
+          <div className='projects--card '>
+            {/* https://movielist-consolebotanist.netlify.app/ */}
+            <Image
+              className='overflow-hidden object-cover'
+              width={'100%'}
+              height={'100%'}
+              src={movielistProj}
+            />
+          </div>
+
+          <div className='projects--card '>
+            {/* https://colorpalette-consolebotanist.netlify.app/ */}
+            <Image
+              className='rounded-lg object-cover w-full '
+              width={'100%'}
+              height={'100%'}
+              src={colorpaletteProj}
+            />
+          </div>
+
+          <div className='projects--card'>
+            {/* https://nextjs-rendering-pattern-ssg.netlify.app/ */}
             <Image
               className='rounded-lg object-cover'
               width={'100%'}
               height={'100%'}
-              layout='responsive'
-              src={proj1}
+              src={pokeProj}
             />
           </div>
-          <div className='basis-1/3 flex-1 border border-red-500 max-w-lg mx-auto'>
+
+          <div className='projects--card'>
+            {/* https://cappucino-shopping-list.netlify.app/ */}
+            <Image
+              className='rounded-lg object-cover w-full'
+              width={'100%'}
+              height={'100%'}
+              src={shoplistProj}
+            />
+          </div>
+
+          <div className='projects--card'>
+            {/* https://inter-space.netlify.app/ */}
             <Image
               className='rounded-lg object-cover'
               width={'100%'}
               height={'100%'}
-              layout='responsive'
-              src={proj2}
+              src={spaceProj}
             />
           </div>
-          <div className='basis-1/3 flex-1 max-w-lg mx-auto'>
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              layout='responsive'
-              src={proj3}
-            />
-          </div>
-          <div className='basis-1/3 flex-1 max-w-lg mx-auto'>
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              layout='responsive'
-              src={proj4}
-            />
-          </div>
-          <div className='basis-1/3 flex-1 max-w-lg mx-auto'>
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              layout='responsive'
-              src={proj5}
-            />
-          </div>
-          <div className='basis-1/3 flex-1 max-w-lg mx-auto'>
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              layout='responsive'
-              src={proj6}
-            />
-          </div>
+          <Link href='/project/2'>
+            <div className='projects--card'>
+              <Image
+                className='rounded-lg object-cover'
+                width={'100%'}
+                height={'100%'}
+                src={landingProj}
+              />
+            </div>
+          </Link>
         </div>
       </section>
     </main>
