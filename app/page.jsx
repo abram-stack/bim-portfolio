@@ -36,7 +36,7 @@ export default function Home() {
             dedication and it creates its own satisfaction same way as i have my
             unique perpective in my Frontend Web Development. As i continued my
             journey in Frankfurt University Applied Science in Germany, as
-            Computer Science student, i've done work and research of the{' '}
+            Computer Science student, i've done work and research of the
             <span className='text-teal-500'>sustainability</span> aspects of the
             websites.
           </p>
