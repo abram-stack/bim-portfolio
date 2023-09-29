@@ -10,7 +10,7 @@ export default function Hero() {
     <section className='container min-h-screen'>
       <div className='hero'>
         <h2 className='greeting'>
-          Ei Gude! I'am
+          Ei Gude! I&apos;am
           <br />
           <span className='text-[#abc7dd] logo'>Bram</span>
         </h2>

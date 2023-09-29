@@ -26,7 +26,7 @@ export default function Home() {
           <p className='text-md py-2 leading-7 text-gray-800'>
             Heard of Dreamweaver? Ouf that was somewhere decades ago. At that
             time, where i designed my first ever website at my junior high. Not
-            the perfect rocket launch i'd say since that time. However, some
+            the perfect rocket launch i&apos;d say since that time. However, some
             years later, my older version of me, encourage himself and had found
             the passion, fun and tried to conquer the world where once beyond
             the knowledge.
@@ -36,13 +36,13 @@ export default function Home() {
             dedication and it creates its own satisfaction same way as i have my
             unique perpective in my Frontend Web Development. As i continued my
             journey in Frankfurt University Applied Science in Germany, as
-            Computer Science student, i've done work and research of the
+            Computer Science student, i&apos;ve done work and research of the
             <span className='text-teal-500'>sustainability</span> aspects of the
             websites.
           </p>
           <p>
             Trial and errors are not taboo. Learn and re-learn many times until
-            it grasps, the A-ha moment that i've been waiting for.
+            it grasps, the A-ha moment that i&apos;ve been waiting for.
           </p>
         </div>
 
