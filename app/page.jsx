@@ -14,6 +14,7 @@ import landingProj from '../public/landing-proj.png';
 
 // Components
 import Hero from './components/Hero';
+import projects from './_data/projects';
 
 export default function Home() {
   return (
@@ -22,25 +23,25 @@ export default function Home() {
       {/* SECTION: SERVICE */}
       <section className='container'>
         <div>
-          <h3 className='text-2xl subtitle my-5'>My journey</h3>
-          <p className='text-md py-2 leading-7 text-gray-800'>
+          <h3 className='text-2xl subtitle mt-10 mb-8'>My journey</h3>
+          <p className='description'>
             Heard of Dreamweaver? Ouf that was somewhere decades ago. At that
             time, where i designed my first ever website at my junior high. Not
-            the perfect rocket launch i&apos;d say since that time. However, some
-            years later, my older version of me, encourage himself and had found
-            the passion, fun and tried to conquer the world where once beyond
-            the knowledge.
+            the perfect rocket launch i&apos;d say since that time. However,
+            some years later, my older version of me, encourage himself and had
+            found the passion, fun and tried to conquer the world where once
+            beyond the knowledge.
           </p>
-          <p className='text-md py-2 leading-7 text-gray-800'>
+          <p className='description'>
             Growing plants takes time. Good harvest need good care and
             dedication and it creates its own satisfaction same way as i have my
             unique perpective in my Frontend Web Development. As i continued my
             journey in Frankfurt University Applied Science in Germany, as
             Computer Science student, i&apos;ve done work and research of the
-            <span className='text-teal-500'>sustainability</span> aspects of the
-            websites.
+            <span className='text-teal-500'> sustainability</span> aspects of
+            the websites.
           </p>
-          <p>
+          <p className='description'>
             Trial and errors are not taboo. Learn and re-learn many times until
             it grasps, the A-ha moment that i&apos;ve been waiting for.
           </p>
@@ -92,16 +93,18 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='py-10 grid md:grid-cols-2 gap-10'>
-          <div className='projects--card '>
-            {/* https://movielist-consolebotanist.netlify.app/ */}
-            <Image
-              className='overflow-hidden object-cover'
-              width={'100%'}
-              height={'100%'}
-              src={movielistProj}
-            />
-          </div>
+        <div className='border border-red-400 py-10 grid md:grid-cols-2 gap-10'>
+          <Link href={'/projects/movielist'}>
+            <div className='projects--card '>
+              {/* https://movielist-consolebotanist.netlify.app/ */}
+              <Image
+                className='overflow-hidden object-cover'
+                width={'100%'}
+                height={'100%'}
+                src={movielistProj}
+              />
+            </div>
+          </Link>
 
           <div className='projects--card '>
             {/* https://colorpalette-consolebotanist.netlify.app/ */}
