@@ -52,9 +52,10 @@ body{
 .card--title{
   @apply text-lg font-medium mt-8 mb-2
 }
-.projects--card{
+.card--project{
   box-shadow: 1px 1px 5px #999;
-  @apply max-w-lg mx-auto rounded-lg
+  flex: 1 0 200px;
+  @apply w-60 h-64 max-w-lg mx-auto rounded-lg
 }
 /* LAYOUT */
 .hero{

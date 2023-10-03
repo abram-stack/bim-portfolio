@@ -15,6 +15,7 @@ import landingProj from '../public/landing-proj.png';
 // Components
 import Hero from './components/Hero';
 import projects from './_data/projects';
+import ProjectList from './projects/ProjectList';
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION: Projects */}
+      {/* SECTION: Projects showcase*/}
       <section className='container '>
         <div>
           <h3 className='subtitle my-5'>Projects</h3>
@@ -93,20 +94,10 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='border border-red-400 py-10 grid md:grid-cols-2 gap-10'>
-          <Link href={'/projects/movielist'}>
-            <div className='projects--card '>
-              {/* https://movielist-consolebotanist.netlify.app/ */}
-              <Image
-                className='overflow-hidden object-cover'
-                width={'100%'}
-                height={'100%'}
-                src={movielistProj}
-              />
-            </div>
-          </Link>
+        <div className=' py-10 grid md:grid-cols-2 gap-10'>
+          <ProjectList />
 
-          <div className='projects--card '>
+          <div className='card--project'>
             {/* https://colorpalette-consolebotanist.netlify.app/ */}
             <Image
               className='rounded-lg object-cover w-full '
@@ -116,7 +107,7 @@ export default function Home() {
             />
           </div>
 
-          <div className='projects--card'>
+          <div className='card--project'>
             {/* https://nextjs-rendering-pattern-ssg.netlify.app/ */}
             <Image
               className='rounded-lg object-cover'
@@ -126,7 +117,7 @@ export default function Home() {
             />
           </div>
 
-          <div className='projects--card'>
+          <div className='card--project'>
             {/* https://cappucino-shopping-list.netlify.app/ */}
             <Image
               className='rounded-lg object-cover w-full'
@@ -136,7 +127,7 @@ export default function Home() {
             />
           </div>
 
-          <div className='projects--card'>
+          <div className='card--project'>
             {/* https://inter-space.netlify.app/ */}
             <Image
               className='rounded-lg object-cover'
@@ -146,7 +137,7 @@ export default function Home() {
             />
           </div>
           <Link href='/project/2'>
-            <div className='projects--card'>
+            <div className='card--project'>
               <Image
                 className='rounded-lg object-cover'
                 width={'100%'}
