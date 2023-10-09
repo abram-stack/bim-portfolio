@@ -35,7 +35,10 @@ body{
 .description{
   @apply text-base py-2 leading-7 text-gray-800
 }
-
+/* LAYOUT */
+.hero {
+  @apply mt-20
+}
 .container{
   @apply px-10 md:px-20 lg:px-40 mx-auto
 }
@@ -44,6 +47,9 @@ body{
 /* COMPONENTS */
 .social{
   @apply bg-primary rounded-md py-1 px-2 text-light
+}
+.tech{
+  @apply border border-primary rounded-xl py-1 px-2 text-primary
 }
 .card{
   box-shadow: 1px 1px 5px #999;
@@ -54,10 +60,28 @@ body{
 }
 .card--project{
   box-shadow: 1px 1px 5px #999;
-  flex: 1 0 200px;
-  @apply w-60 h-64 max-w-lg mx-auto rounded-lg
+  @apply w-80 h-[35rem]  mx-auto rounded-lg flex flex-col gap-2
 }
-/* LAYOUT */
-.hero{
-  @apply mt-20
+.card--img{
+  flex: 50%;
+  box-shadow: 0px 1px 5px #999;
+  min-height: 218px;
+  max-height: 218px;
+  @apply rounded-lg
+}
+.card--content{
+  flex: 50%;
+  @apply flex flex-col gap-3 p-5 rounded-lg justify-between
+}
+.project-title{
+  @apply font-extrabold text-lg capitalize w-[280] overflow-hidden text-ellipsis whitespace-nowrap
+}
+.project-highlight{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  @apply text-primary pb-4 max-h-20 max-w-md border border-b-primary overflow-hidden mb-2
+}
+.tech-wrapper{
+  @apply flex flex-wrap gap-2 mb-1 max-h-20 max-w-md overflow-hidden
 }

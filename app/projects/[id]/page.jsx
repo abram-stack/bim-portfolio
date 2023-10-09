@@ -5,6 +5,7 @@
 import { notFound } from 'next/navigation';
 import projects from '../../_data/projects';
 
+// create a static "route" based on param before hand,
 export function generateStaticParams() {
   // apparantly id should be string
   return projects.map((pro) => ({

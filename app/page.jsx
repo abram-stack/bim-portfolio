@@ -82,6 +82,7 @@ export default function Home() {
             <p className='text-gray-800 py-1'>Firebase</p>
           </div>
         </div>
+        {/* TODO: Section of: and many more skills to be conquered*/}
       </section>
 
       {/* SECTION: Projects showcase*/}
@@ -94,58 +95,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=' py-10 grid md:grid-cols-2 gap-10'>
+        <div className=' py-10 grid md:grid-cols-2 gap-14'>
           <ProjectList />
-
-          <div className='card--project'>
-            {/* https://colorpalette-consolebotanist.netlify.app/ */}
-            <Image
-              className='rounded-lg object-cover w-full '
-              width={'100%'}
-              height={'100%'}
-              src={colorpaletteProj}
-            />
-          </div>
-
-          <div className='card--project'>
-            {/* https://nextjs-rendering-pattern-ssg.netlify.app/ */}
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              src={pokeProj}
-            />
-          </div>
-
-          <div className='card--project'>
-            {/* https://cappucino-shopping-list.netlify.app/ */}
-            <Image
-              className='rounded-lg object-cover w-full'
-              width={'100%'}
-              height={'100%'}
-              src={shoplistProj}
-            />
-          </div>
-
-          <div className='card--project'>
-            {/* https://inter-space.netlify.app/ */}
-            <Image
-              className='rounded-lg object-cover'
-              width={'100%'}
-              height={'100%'}
-              src={spaceProj}
-            />
-          </div>
-          <Link href='/project/2'>
-            <div className='card--project'>
-              <Image
-                className='rounded-lg object-cover'
-                width={'100%'}
-                height={'100%'}
-                src={landingProj}
-              />
-            </div>
-          </Link>
         </div>
       </section>
     </main>

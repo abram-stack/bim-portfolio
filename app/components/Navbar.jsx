@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import { RiMoonFoggyFill } from 'react-icons/ri';
-
+import { PiTreeDuotone } from 'react-icons/pi';
 export default function Navbar() {
   return (
     <>
       <nav className='py-10 flex justify-between container'>
         <Link href='/'>
           <h1 className='text-xl text-[#abc7dd] font-rubik cursor-pointer logo'>
-            Console <br /> Botanist
+            Botanesia <br /> Console
           </h1>
         </Link>
         <ul className='flex gap-3 items-center'>
           <li>
-            <RiMoonFoggyFill className='cursor-pointer text-2xl' />
+            <PiTreeDuotone className='cursor-pointer text-2xl' />
           </li>
           <li>
             <Link href={`/about`}> About Me</Link>
