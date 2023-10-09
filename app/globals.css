@@ -5,6 +5,7 @@
 html, body{
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -29,7 +30,7 @@ body{
   text-shadow: -2px 4px #5F1C1C;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #011423;
-  @apply font-rubik text-xl text-[#D2C193]
+  @apply font-rubik text-xl text-[#D2C193] md:text-2xl
 }
 
 .description{
@@ -42,14 +43,25 @@ body{
 .container{
   @apply px-10 md:px-20 lg:px-40 mx-auto
 }
-
+.profile-content{
+  flex:50%
+}
 
 /* COMPONENTS */
+.btn{
+  @apply bg-primary rounded-md py-1 px-2 text-light
+}
 .social{
   @apply bg-primary rounded-md py-1 px-2 text-light
 }
 .tech{
   @apply border border-primary rounded-xl py-1 px-2 text-primary
+}
+.about{
+  transition: border-width 0.6s linear;
+}
+.about:hover,.about:focus{
+  @apply border border-b-primary
 }
 .card{
   box-shadow: 1px 1px 5px #999;
@@ -83,5 +95,5 @@ body{
   @apply text-primary pb-4 max-h-20 max-w-md border border-b-primary overflow-hidden mb-2
 }
 .tech-wrapper{
-  @apply flex flex-wrap gap-2 mb-1 max-h-20 max-w-md overflow-hidden
+  @apply flex flex-wrap mb-1 max-h-20 max-w-md overflow-hidden
 }

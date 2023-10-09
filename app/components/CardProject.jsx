@@ -21,7 +21,7 @@ export default function CardProject({ project }) {
           <p className='project-highlight'>{project.highlight}</p>
 
           <h3 className='font-bold'>Tech</h3>
-          <div className='tech-wrapper '>
+          <div className='tech-wrapper gap-2 '>
             {project.tech.map((tech) => (
               <p key={tech} className='tech'>
                 {tech}
@@ -29,7 +29,10 @@ export default function CardProject({ project }) {
             ))}
           </div>
 
-          <Link href={`/projects/${project.id}`}>
+          <Link
+            href={`/projects/${project.id}`}
+            // className='border border-blue-500'
+          >
             <button className='px-2 py-1 bg-light border border-primary rounded-md font-bold'>
               Details
             </button>

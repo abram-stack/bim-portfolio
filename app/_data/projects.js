@@ -3,10 +3,11 @@ export default [
   {
     id: 1,
     title: 'movie list',
-    description: 'movie list something something',
+    description: 'movie list something something. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni cum iste facilis nesciunt, consectetur inventore amet rem unde ducimus! ',
     imgSrc: '/movielist-proj.png',
     highlight:'Weekend and chill? Add your favourite movies to the list! ',
-    tech: ['html', 'css', 'js', 'API']
+    tech: ['html', 'css', 'js', 'API', 'firebase'],
+    website:'https://movielist-consolebotanist.netlify.app/'
   },
   {
     id: 2,

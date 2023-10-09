@@ -10,16 +10,16 @@ export default function Navbar() {
             Botanesia <br /> Console
           </h1>
         </Link>
-        <ul className='flex gap-3 items-center'>
+        <ul className='flex gap-3 items-center '>
           <li>
-            <PiTreeDuotone className='cursor-pointer text-2xl' />
-          </li>
-          <li>
-            <Link href={`/about`}> About Me</Link>
+            <Link href={`/about`} className='about flex  px-4 py-2 '>
+              <PiTreeDuotone className='text-2xl' />
+              About Me
+            </Link>
           </li>
           <li>
             <Link
-              href='/resume'
+              href='https://brambimo.netlify.app/'
               className='bg-gradient-to-r from-cyan-500 to-teal-500  px-4 py-2 rounded-md text-white'
             >
               Resume
