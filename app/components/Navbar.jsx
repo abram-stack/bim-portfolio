@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav className='py-10 flex justify-between container'>
         <Link href='/'>
           <h1 className='text-xl text-[#abc7dd] font-rubik cursor-pointer logo'>
-            Botanesia <br /> Console
+            Console <br /> Botanesia
           </h1>
         </Link>
         <ul className='flex gap-3 items-center '>

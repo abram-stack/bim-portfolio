@@ -17,8 +17,8 @@ const rubik = Rubik_Mono_One({
 });
 
 export const metadata = {
-  title: 'Console Botanist',
-  description: 'My Coding Garden',
+  title: 'Console Botanesia',
+  description: 'Coding Journal, Programming Web Development',
 };
 
 export default function RootLayout({ children }) {

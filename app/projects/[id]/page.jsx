@@ -28,8 +28,8 @@ export default function ProjectDetails({ params }) {
   return (
     <>
       {!project && notFound()}
-      <section className='container border border-red-300'>
-        <div className='w-full max-w-3xl h-[32rem] max-h-96 relative mx-auto border border-blue-400'>
+      <section className='container'>
+        <div className='w-full max-w-3xl h-[32rem] max-h-96 relative mx-auto'>
           <Image src={project.imgSrc} layout='fill' objectFit='cover' />
         </div>
         <h2 className='project-title mt-8 mb-4'>{project.title}</h2>
