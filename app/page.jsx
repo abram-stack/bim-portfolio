@@ -39,7 +39,7 @@ export default function Home() {
             unique perpective in my Frontend Web Development. As i continued my
             journey in Frankfurt University Applied Science in Germany, as
             Computer Science student, i&apos;ve done work and research of the
-            <span className='text-teal-500'> sustainability</span> aspects of
+            <span className='font-bold text-teal-600'> sustainability</span> aspects of
             the websites.
           </p>
           <p className='description'>

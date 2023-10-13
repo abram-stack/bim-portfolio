@@ -34,7 +34,7 @@ body{
 }
 
 .description{
-  @apply text-base py-2 leading-7 text-gray-800
+  @apply text-lg py-2 leading-7 text-gray-800
 }
 /* LAYOUT */
 .hero {
@@ -65,7 +65,7 @@ body{
 }
 .card{
   box-shadow: 1px 1px 5px #999;
-  @apply text-center  p-10 rounded-xl my-10
+  @apply text-center  p-5 rounded-xl my-10
 }
 .card--title{
   @apply text-lg font-medium mt-8 mb-2
@@ -96,4 +96,23 @@ body{
 }
 .tech-wrapper{
   @apply flex flex-wrap mb-1 max-h-20 max-w-md overflow-hidden
+}
+
+.character{
+  @apply p-10 mb-20 flex flex-col gap-2 lg:flex-row
+}
+
+.char-img--container{
+  height:80%;
+  @apply bg-primary
+}
+.exp-level{
+  height: 15%;
+}
+.card--academic{
+  box-shadow: 1px 1px 5px #999;
+  @apply w-full flex rounded-lg lg:flex-col
+}
+.academic--logo{
+  @apply max-w-[135px] min-w-[80px] pt-6 w-1/3
 }
