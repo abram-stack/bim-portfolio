@@ -1,5 +1,8 @@
-import { LiaUniversitySolid } from 'react-icons/lia';
-
+import { LiaLinkedinIn, LiaUniversitySolid } from 'react-icons/lia';
+import { TfiHtml5, TfiCss3 } from 'react-icons/tfi';
+import { FaReact, FaNodeJs, FaTools } from 'react-icons/fa';
+import { SiJavascript, SiFirebase } from 'react-icons/si';
+import { TbBrandNextjs, TbSql } from 'react-icons/tb';
 // image
 import Image from 'next/image';
 import charImg from '../../public/char.webp';
@@ -31,40 +34,55 @@ export default function About() {
       <section className='container mt-10 lg:mt-0'>
         <h2 className='subtitle  mb-10'>My Story</h2>
         <p className='description mb-2'>
-          I see, you are going this far. Well... <br />
-          Welcome to Console Botanesia
+          I appreciate you making it this far. So... <br />
+          Welcome to Console Botanesia!
         </p>
         <p className='description mb-2'>
-          As I started my journey, I never thought of my self clever enough to
-          code. Started a whole new life in my early 20&apos;s as i left my
-          beloved country Indonesia, tried to pursue my childhood dreams,
-          <span className='font-bold text-teal-600'> going abroad</span>. As i
-          came to Germany to pursue my dream, i gave myself a second chance to
-          continue re-learn everything about life and of course the
-          <span className='font-bold text-teal-600'> computer world</span>.
+          When I started my journey, I never considered myself clever enough to
+          code. Starting my whole new life in my early 20&apos;s, I left my
+          beloved country Indonesia in pursuit of my childhood dream:
+          <span className='font-bold text-teal-600'> going abroad</span>.
+          Continuing my interest in computer science gave me a second chance to
+          re-learn everything about
+          <span className='font-bold text-teal-600'> the computer world</span>,
+          and of course about life.
         </p>
 
         <p className='description mb-2'>
-          Inspired by the one of the indonesian elder tribe, my motivation
-          toward my career and journey as human being is to give back to the
-          nature and community.
+          You might be wondering what Console Botanesia means? Inspired by one
+          of the tribes of elders in Indonesia, my motivation for my career and
+          journey as a human being is to give back to the nature and my
+          community.
         </p>
 
-        <div className='character border border-red-400 '>
-          {/* img and exp */}
-          <div className='char border border-orange-400 lg:w-3/12'>
-            <div className='char-img--container'>
-              {/* <Image
-                src={charImg}
+        <p className='description mb-2'>
+          And at the same time, programmers always have to stay in touch with
+          our most beloved debugger, you know what, console.log! There you go.
+          Two things that should never be taken for granted.
+        </p>
 
-              /> */}
+        <div className='character'>
+          {/* CHAR-IMG */}
+          <div className='char '>
+            <div className='py-1'>
+              <p className='subtitle-small text-center'>Bramantyo</p>
             </div>
-            <div className='exp-level  border border-black'>
-              <span className='w-30%  bg-cyan-400'>level 30</span>
+            <div className='char-img--container relative'>
+              <Image src={charImg} layout='fill' objectFit='cover' />
+            </div>
+            <div className='exp-level flex gap-1 p-1'>
+              <div className='border border-primary rounded-full p-1'>
+                <span className='bg-yellow-400 rounded-full text-center font-bold'>
+                  XP
+                </span>
+              </div>
+              <div className='border border-primary rounded-2xl p-1 w-full'>
+                <span className='level-bar'>Lvl: 30</span>
+              </div>
             </div>
           </div>
 
-          {/* academic */}
+          {/* ACADEMIC */}
           <div className='academic lg:w-3/12'>
             <div className='card--academic'>
               <div className='academic--logo '>
@@ -91,17 +109,39 @@ export default function About() {
             </div>
           </div>
 
-          {/* SKills */}
-          <div className='skills border border-blue-400 lg:w-1/2'>
-            <h3>Skills</h3>
-            <div className='skills-container'>
-              <p>html</p>
-              <p>css</p>
-              <p>js</p>
-              <p>react</p>
+          {/* ABILITY */}
+          <div className='skills flex flex-col lg:w-1/2'>
+            <h3 className='py-5 text-center font-grotesk '>Skills</h3>
+            <div className='skills-container '>
+              <div className='skills-element  text-orange-400'>
+                <TfiHtml5 className='' />
+              </div>
+              <div className='skills-element text-blue-500'>
+                <TfiCss3 />
+              </div>
+              <div className='skills-element text-yellow-300 '>
+                <SiJavascript />
+              </div>
+              <div className='skills-element text-blue-500'>
+                <FaReact />
+              </div>
+              <div className='skills-element text-orange-400'>
+                <SiFirebase />
+              </div>
+              <div className='skills-element '>
+                <TbSql />
+              </div>
+              <div className='skills-element text-black'>
+                <TbBrandNextjs />
+              </div>
             </div>
           </div>
         </div>
+
+        <p className='description mb-2'>
+          Awesome, folks! Reach out to me on my LinkedIn
+        </p>
+        <LiaLinkedinIn />
       </section>
     </>
   );

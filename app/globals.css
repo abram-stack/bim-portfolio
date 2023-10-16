@@ -32,6 +32,12 @@ body{
   -webkit-text-stroke-color: #011423;
   @apply font-rubik text-xl text-[#D2C193] md:text-2xl
 }
+.subtitle-small{
+  text-shadow: -2px 4px #5F1C1C;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #011423;
+  @apply font-rubik text-sm text-[#D2C193] md:text-lg
+}
 
 .description{
   @apply text-lg py-2 leading-7 text-gray-800
@@ -99,15 +105,26 @@ body{
 }
 
 .character{
-  @apply p-10 mb-20 flex flex-col gap-2 lg:flex-row
+  @apply p-10 mb-20 flex flex-col gap-3 lg:flex-row
 }
-
+.char{
+  box-shadow: 1px 1px 5px #999;
+  @apply flex flex-col gap-1 border border-orange-400 rounded-lg lg:w-3/12
+}
 .char-img--container{
-  height:80%;
-  @apply bg-primary
+  flex:80%;
+  min-height: 200px;
+  @apply rounded-md md:basis-11/12 lg:basis-11/12
 }
 .exp-level{
-  height: 15%;
+  flex: 15%;
+  @apply md:basis-1/12 lg:basis-1/12
+}
+.level-bar{
+  @apply h-full block w-[40%] overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-[#D2C193] rounded-2xl text-center
+}
+.academic{
+  @apply flex flex-col gap-2
 }
 .card--academic{
   box-shadow: 1px 1px 5px #999;
@@ -115,4 +132,16 @@ body{
 }
 .academic--logo{
   @apply max-w-[135px] min-w-[80px] pt-6 w-1/3
+}
+.skills{
+  box-shadow: 1px 1px 5px #999;
+  @apply rounded-lg
+}
+.skills-container{
+ 
+  @apply grid grid-cols-3 items-center gap-2 px-2 h-full md:grid-cols-4 lg:grid-cols-4
+}
+.skills-element{
+  box-shadow: 1px 1px 5px #999;
+  @apply flex justify-center items-center h-20  text-5xl
 }

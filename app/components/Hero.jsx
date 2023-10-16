@@ -21,7 +21,7 @@ export default function Hero() {
             {/* TODO: input rangebar here, JS for bio length  */}
             <p className='text-xl py-5 leading-7 md:text-xl max-w-2xl '>
               Just scratched the surface of the frontend world, amazed and
-              heading forward for discovering the rest of the web dev world.
+              heading forward to discover the rest of the web dev world.
             </p>
             <div className='text-2xl flex justify-center text-gray-800 gap-5'>
               <Link href='#' className='social'>

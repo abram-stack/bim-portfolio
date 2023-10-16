@@ -26,25 +26,28 @@ export default function Home() {
         <div>
           <h3 className='text-2xl subtitle mt-10 mb-8'>My journey</h3>
           <p className='description'>
-            Heard of Dreamweaver? Ouf that was somewhere decades ago. At that
-            time, where i designed my first ever website at my junior high. Not
-            the perfect rocket launch i&apos;d say since that time. However,
-            some years later, my older version of me, encourage himself and had
-            found the passion, fun and tried to conquer the world where once
-            beyond the knowledge.
+            Heard of Dreamweaver? Ouff, that was decades ago. At that time, when
+            i designed my first ever website in junior high. Not the perfect
+            rocket launch, I&apos;d say. However, some years later, the older
+            version of me encouraged himself and found the passion and fun to
+            try to conquer the world beyond knowledge.
           </p>
           <p className='description'>
-            Growing plants takes time. Good harvest need good care and
-            dedication and it creates its own satisfaction same way as i have my
-            unique perpective in my Frontend Web Development. As i continued my
-            journey in Frankfurt University Applied Science in Germany, as
-            Computer Science student, i&apos;ve done work and research of the
-            <span className='font-bold text-teal-600'> sustainability</span> aspects of
-            the websites.
+            Growing plants takes time. Good harvest needs good care and
+            dedication and it creates its own satisfaction and that is what
+            gives me my unique perpective as a frontend web developer. As I
+            continued my journey at Frankfurt University of Applied Sciences in
+            Germany, where I studied Computer Science, I worked and researched
+            of the
+            <span className='font-bold text-teal-600'>
+              {' '}
+              sustainability
+            </span>{' '}
+            aspects of and possibilites for websites.
           </p>
           <p className='description'>
-            Trial and errors are not taboo. Learn and re-learn many times until
-            it grasps, the A-ha moment that i&apos;ve been waiting for.
+            Trial and error is no taboo. I learn and re-learn many times until I
+            grasp it and have the A-ha moment that I&apos;ve been waiting for.
           </p>
         </div>
 
@@ -90,7 +93,7 @@ export default function Home() {
         <div>
           <h3 className='subtitle my-5'>Projects</h3>
           <p className='text-md py-2 leading-7 text-gray-800'>
-            This are some of projects i built along the way of my journey as a
+            These are some of the projects I have built along my journey as a
             <span className='text-primary'> frontend explorer</span>.
           </p>
         </div>

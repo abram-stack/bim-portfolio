@@ -14,7 +14,7 @@ export default [
     title: 'Shopping List Lesecafe',
     description: 'ngape dulu bos',
     imgSrc: '/shoplist-proj.png',
-    highlight:'Not losing the track of what you should buy from the store anymore! Add and remove easily to the basket.',
+    highlight:'Not losing track of what you should buy from the store anymore! Add and remove to the basket easily.',
     tech: ['html', 'css', 'js', 'firebase'],
     website: 'https://cappucino-shopping-list.netlify.app/'
   },
@@ -29,10 +29,10 @@ export default [
   },
   {
     id: 4,
-    title: 'CO2 Emission from a website',
+    title: 'Website CO2 emission',
     description: '',
     imgSrc: '/poke-proj.png',
-    highlight:'Study case for the thesis. CO2 emissions from website. With Pokemon Characters',
+    highlight:'Case study for my Bachelor thesis about CO2 emissions from websites with Pokemon characters',
     tech: ['html', 'css', 'js', 'react', 'Next.Js', 'API'],
     website: 'https://nextjs-rendering-pattern-ssg.netlify.app/'
   },
@@ -50,7 +50,7 @@ export default [
     title: 'Travel Journal',
     description: '',
     imgSrc: '/travel-proj.png',
-    highlight:'Hello World. Yes, the real hello world. Travel Journal while you experiencing the world. ',
+    highlight:'Hello World. Yes, the real hello world. Travel journal for experiencing the world. ',
     tech: ['html', 'css', 'js', 'react', 'vite'],
     website: 'https://travel-journey-botanyconsolecraft.netlify.app/'
   },
