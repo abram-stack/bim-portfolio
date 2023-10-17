@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter, Karla, Rubik_Mono_One, Space_Grotesk } from 'next/font/google';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] });
 const grotesk = Space_Grotesk({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -1,4 +1,3 @@
-import { LiaLinkedinIn, LiaUniversitySolid } from 'react-icons/lia';
 import { TfiHtml5, TfiCss3 } from 'react-icons/tfi';
 import { FaReact, FaNodeJs, FaTools } from 'react-icons/fa';
 import { SiJavascript, SiFirebase } from 'react-icons/si';
@@ -7,6 +6,8 @@ import { TbBrandNextjs, TbSql } from 'react-icons/tb';
 import Image from 'next/image';
 import charImg from '../../public/char.webp';
 import me from '../../public/bramPortrait.jpg';
+import Link from 'next/link';
+import { BiLogoLinkedin } from 'react-icons/bi';
 
 export default function About() {
   return (
@@ -86,25 +87,24 @@ export default function About() {
           <div className='academic lg:w-3/12'>
             <div className='card--academic'>
               <div className='academic--logo '>
-                <p className=' text-4xl text-center w-8 h-8 mx-auto'>🎓</p>
+                <p className=' text-4xl'>🎓</p>
               </div>
-              <div className='pt-5 px-1'>
-                <h3 className='text-lg font-medium'>
+              <div className='academic--content'>
+                <h3 className='text-lg font-medium text-center'>
                   Frankfurt University of Applied Sciences
                 </h3>
-                <p className='text-gray-800 py-1'>B. Sc Computer Science</p>
-                <p className='text-gray-800 py-1'>B. Sc Computer Science</p>
+                <p className='text-gray-800'>B. Sc Computer Science</p>
               </div>
             </div>
 
             <div className='card--academic'>
               <div className='academic--logo'>
-                <p className=' text-4xl text-center w-8 h-8 mx-auto'>💻</p>
+                <p className=' text-4xl'>💻</p>
               </div>
-              <div className='pt-5 px-1'>
+              <div className='academic--content'>
                 <h3 className='text-lg font-medium'>Frontend Courses</h3>
-                <p className='text-gray-800 py-1'>Scrimba</p>
-                <p className='text-gray-800 py-1'>Free Code Camp</p>
+                <p className='text-gray-800'>Scrimba</p>
+                <p className='text-gray-800'>Free Code Camp</p>
               </div>
             </div>
           </div>
@@ -119,11 +119,14 @@ export default function About() {
               <div className='skills-element text-blue-500'>
                 <TfiCss3 />
               </div>
-              <div className='skills-element text-yellow-300 '>
+              <div className='skills-element text-yellow-500 '>
                 <SiJavascript />
               </div>
               <div className='skills-element text-blue-500'>
                 <FaReact />
+              </div>
+              <div className='skills-element text-green-700'>
+                <FaNodeJs />
               </div>
               <div className='skills-element text-orange-400'>
                 <SiFirebase />
@@ -139,9 +142,18 @@ export default function About() {
         </div>
 
         <p className='description mb-2'>
-          Awesome, folks! Reach out to me on my LinkedIn
+          Awesome, folks! Reach out to me on my
+          <span>
+            <Link href='https://linkedin.com/in/bbimo' className='text-primary'>
+               LinkedIn
+            </Link>
+          </span>
         </p>
-        <LiaLinkedinIn />
+
+        <p className='description mb-2'>
+          Check out my Github repo pages, if you want to see more of my side
+          quests as frontend explorer.
+        </p>
       </section>
     </>
   );

@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 // images
 import bims from '../../public/avatar.jpg';
+import Social from './Social';
 
 export default function Hero() {
   return (
@@ -23,17 +24,7 @@ export default function Hero() {
               Just scratched the surface of the frontend world, amazed and
               heading forward to discover the rest of the web dev world.
             </p>
-            <div className='text-2xl flex justify-center text-gray-800 gap-5'>
-              <Link href='#' className='social'>
-                <BiLogoTwitter />
-              </Link>
-              <Link href='#' className='social'>
-                <BiLogoLinkedin />
-              </Link>
-              <Link href='#' className='social'>
-                <BiLogoGithub />
-              </Link>
-            </div>
+            <Social/>
           </div>
           <div className='profile-img relative border border-teal-500  w-80 h-80 self-center rounded-full overflow-hidden'>
             <Image src={bims} layout='fill' objectFit='cover' />
