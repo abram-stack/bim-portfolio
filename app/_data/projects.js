@@ -12,7 +12,7 @@ export default [
   {
     id: 2,
     title: 'Shopping List Lesecafe',
-    description: 'ngape dulu bos',
+    description: 'one centralized shopping list for the co-worker',
     imgSrc: '/shoplist-proj.png',
     highlight:'Not losing track of what you should buy from the store anymore! Add and remove to the basket easily.',
     tech: ['html', 'css', 'js', 'firebase'],
@@ -51,6 +51,15 @@ export default [
     description: '',
     imgSrc: '/travel-proj.png',
     highlight:'Hello World. Yes, the real hello world. Travel journal for experiencing the world. ',
+    tech: ['html', 'css', 'js', 'react', 'vite'],
+    website: 'https://travel-journey-botanyconsolecraft.netlify.app/'
+  },
+  {
+    id: 7,
+    title: 'VANlife',
+    description: '',
+    imgSrc: '/travel-proj.png',
+    highlight:'Van life ',
     tech: ['html', 'css', 'js', 'react', 'vite'],
     website: 'https://travel-journey-botanyconsolecraft.netlify.app/'
   },

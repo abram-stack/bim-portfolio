@@ -16,14 +16,18 @@ import landingProj from '../public/landing-proj.png';
 import Hero from './components/Hero';
 import projects from './_data/projects';
 import ProjectList from './projects/ProjectList';
+import Journey from './components/Journey';
+import Services from './components/Services';
+import Experience from './components/Experience';
 
 export default function Home() {
   return (
     <main className=''>
       <Hero />
+      <Journey/>
       {/* SECTION: SERVICE */}
-      <section className='container'>
-        <div>
+      {/* <section className='container'> */}
+        {/* <div>
           <h3 className='text-2xl subtitle mt-10 mb-8'>My journey</h3>
           <p className='description'>
             Heard of Dreamweaver? Ouff, that was decades ago. At that time, when
@@ -49,11 +53,10 @@ export default function Home() {
             Trial and error is no taboo. I learn and re-learn many times until I
             grasp it and have the A-ha moment that I&apos;ve been waiting for.
           </p>
-        </div>
+        </div> */}
 
         {/* CARDS */}
-        <div className='mx-8 lg:flex gap-10'>
-          {/* card 1 */}
+        {/* <div className='mx-8 lg:flex gap-10'>
           <div className='card'>
             <Image src={design} width={100} height={100} className='mx-auto' />
             <h3 className='card--title'>HTML, CSS</h3>
@@ -62,7 +65,7 @@ export default function Home() {
             <p className='text-gray-800 py-1'>Figma</p>
             <p className='text-gray-800 py-1'>Figma</p>
           </div>
-          {/* card 2 */}
+          
           <div className='card'>
             <Image src={code} width={100} height={100} className='mx-auto' />
             <h3 className='card--title'>JavaScript</h3>
@@ -70,7 +73,7 @@ export default function Home() {
             <p className='text-gray-800 py-1'>Adobe XD</p>
             <p className='text-gray-800 py-1'>Figma</p>
           </div>
-          {/* card 3 */}
+          
           <div className='card'>
             <Image
               src={consulting}
@@ -84,9 +87,11 @@ export default function Home() {
             <p className='text-gray-800 py-1'>NextJS</p>
             <p className='text-gray-800 py-1'>Firebase</p>
           </div>
-        </div>
-        {/* TODO: Section of: and many more skills to be conquered*/}
-      </section>
+        </div> */}
+      {/* </section> */}
+
+      <Services/>
+      <Experience/>  
 
       {/* SECTION: Projects showcase*/}
       <section className='container '>
